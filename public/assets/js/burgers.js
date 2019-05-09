@@ -5,8 +5,7 @@ $(function() {
       event.preventDefault();
   
       var newBurger = {
-        name: $("#burgerName").val().trim(),
-        devoured: 0
+        burger_name: $("#burgerName").val().trim(),
       };
 
       $.ajax("/api/burgers", {
@@ -14,7 +13,6 @@ $(function() {
         data: newBurger
       }).then(
         function() {
-          console.log("created new burger");
           location.reload();
         }
       );
@@ -22,7 +20,6 @@ $(function() {
     $(".change-devour").on("click", function(event) {
         var id = $(this).data("id");
       
-    
         var newDevourState = {
           devoured: 1
         };
