@@ -1,7 +1,9 @@
+* {
+    font-family: 'Permanent Marker', cursive;
+}
 h1 {
     text-align: center;
     color: yellow;
-    font-family: 'Permanent Marker', cursive;
 }
 .jumbotron {
     background-color: red;

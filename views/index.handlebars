@@ -1,6 +1,6 @@
 <div class="row">
 
-    <div class="col-sm-6">
+    <div class="col-sm-6" style="text-align: center">
         <h3>Burgers To Eat</h3>
         {{#each burgers}}
         {{#unless devoured}}
@@ -8,7 +8,7 @@
         {{/unless}}
         {{/each}}
     </div>
-    <div class="col-sm-6">
+    <div class="col-sm-6" style="text-align: center">
         <h3>Burgers Eaten:</h3>
         {{#each burgers}}
         {{#if devoured}}
@@ -21,13 +21,12 @@
 <hr>
 
 <h1 class="indexbody">What type of burger do you want today?</h1>
-
-
-
+<div style="text-align: center">
 <form class="add-burger">
     <div class="form-group">
         <label for="burgerName"></label>
         <textarea class="form-control" id="burgerName" row="1"></textarea>
     </div>
-    <button type="submit" class="btn btn-primary">Add Da Burger</button>
+    <button type="submit" class="btn btn-danger">Add Da Burger</button>
 </form>
+</div>

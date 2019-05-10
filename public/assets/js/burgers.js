@@ -1,6 +1,4 @@
 $(function() {
-   
-  
     $(".add-burger").on("submit", function(event) {
       event.preventDefault();
   
